@@ -20,9 +20,9 @@ HTML5
 
 CSS3
 
-JavaScript ES6
-
 SASS
+
+JavaScript ES6
 
 ## Autores ✒️
 
