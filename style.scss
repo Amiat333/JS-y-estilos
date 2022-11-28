@@ -1,0 +1,117 @@
+// Colour Palette
+// =====================
+$primary-color: rgba(17, 17, 17, 0.04);
+$secondary-color: white;
+$tertiary-color: #111111;
+$quaternary-color: #585858;
+
+// Typography
+// =====================
+$font-family-1: "Playfair Display", serif;
+$font-family-2: "Heebo", sans-serif;
+
+body {
+  font-family: $font-family-2;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $primary-color;
+  color: $tertiary-color;
+}
+
+h1 {
+  font-family: $font-family-1;
+  font-size: calc(1.60181rem + 0.67889 * ((100vw - 20rem) / 113));
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+  line-height: 1.2;
+}
+
+h5 {
+  position: fixed;
+  cursor: default;
+  border: 1px solid black;
+  border-radius: 20%;
+  padding: 10px;
+  background: rgb(113, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(113, 212, 255, 1) 0%,
+    rgba(155, 244, 255, 1) 50%,
+    rgba(241, 248, 255, 1) 100%
+  );
+}
+
+img {
+  max-width: 100%;
+}
+
+// Main Section
+main {
+  background-color: $secondary-color;
+  max-width: 1000px;
+  padding: 3rem 0 4rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+  max-width: 576px;
+  margin: auto;
+  padding: 2rem;
+
+  header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+
+    &::after {
+      border-bottom: 1px solid #dedede;
+      content: "";
+      display: block;
+      margin: 2rem auto 0;
+      width: 15%;
+    }
+  }
+
+  .post__meta {
+    color: $quaternary-color;
+    font-size: 0.6243rem;
+    letter-spacing: 0.18em;
+    margin: 0 0 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .post__author {
+    color: #ff80ab;
+    margin-right: 1rem;
+  }
+
+  .post__featured-image {
+    margin-bottom: 2.25rem;
+    margin-top: 0;
+    overflow: hidden;
+
+    &.post__image-wide {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      height: auto;
+      width: calc(950px - 8%);
+    }
+  }
+
+  p {
+    font-size: calc(1rem + 0.2 * ((100vw - 20rem) / 113));
+  }
+
+  footer {
+    margin-top: 3rem;
+
+    .post__updated {
+      color: $quaternary-color;
+      font-size: 0.79012rem;
+      font-style: italic;
+      margin: -1.5rem 0 3rem;
+      text-align: left;
+    }
+  }
+}
